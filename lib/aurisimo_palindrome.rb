@@ -1,6 +1,6 @@
 require "aurisimo_palindrome/version"
 
-class String
+module AurisimoPalindrome
   # Returns true for a palindrome, false otherwise.
   def palindrome?
     processed_content == processed_content.reverse
@@ -10,7 +10,14 @@ class String
 
     # Returns content for palindrome testing.
     def processed_content
-      gsub(/\W/, "").downcase
+      to_s.gsub(/[^a-z0-9]/i, "").downcase
     end
 end
+
+class String
+  include AurisimoPalindrome
+end
               
+class Integer
+  include AurisimoPalindrome
+end
