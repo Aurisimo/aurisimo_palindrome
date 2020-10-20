@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "aurisimo_palindrome"
   spec.version       = AurisimoPalindrome::VERSION
   spec.authors       = ["Aurelijus Lape"]
-  spec.email         = ["lape_aurelijus@yahoo.com"]
+  spec.email         = ["aurelijus.lape@yahoo.com"]
 
   spec.summary       = %q{Palindrome detector}
   spec.description   = %q{Learn Enough Ruby palindrome detector.}
